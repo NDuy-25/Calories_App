@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "190642288393",
+    "project_id": "calories-52bd3",
+    "storage_bucket": "calories-52bd3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190642288393:android:c6930e8446ef3f9900c5d8",
+        "android_client_info": {
+          "package_name": "com.duy.project_cuoiki_calories"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARaTKgc9c6knqDc743rKfAcYoKtt4wLYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- The Circular Ring with Gradient -->
+    <path
+        android:pathData="M54,24 A30,30 0 1 1 54,84 A30,30 0 1 1 54,24"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="24"
+                android:startY="54"
+                android:endX="84"
+                android:endY="54"
+                android:type="linear">
+                <item android:offset="0" android:color="#7B61FF"/> <!-- Purple -->
+                <item android:offset="1" android:color="#00F0FF"/> <!-- Cyan -->
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- The bright dot on the ring -->
+    <path
+        android:fillColor="#00F0FF"
+        android:pathData="M68,30 A2.5,2.5 0 1 1 63,30 A2.5,2.5 0 1 1 68,30" />
+
+    <!-- Vertical bars at the bottom -->
+    <path
+        android:fillColor="#00F0FF"
+        android:pathData="M49,76 L49,81 M54,73 L54,84 M59,76 L59,81"
+        android:strokeWidth="1.5"
+        android:strokeColor="#00F0FF"
+        android:strokeLineCap="round" />
+
+    <!-- The Letter "C" -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M61,46.5 C61,41 57.5,39 53,39 C48,39 44,43 44,54 C44,65 48,69 53,69 C57.5,69 61,67 61,61.5 L61,59 L54,59 L54,62 L57,62 C57,64.5 55.5,66 53,66 C50,66 48,63 48,54 C48,45 50,42 53,42 C55.5,42 57,43.5 57,46 L57,48.5 L61,48.5 Z" />
+
+    <!-- "CALORIES" Text (Stylized as paths) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41,72 L42,72 L42,74 L41,74 Z M43.5,72 L44.5,72 L44.5,74 L43.5,74 Z M46,72 L47,72 L47,74 L46,74 Z M48.5,72 L49.5,72 L49.5,74 L48.5,74 Z M51,72 L52,72 L52,74 L51,74 Z M53.5,72 L54.5,72 L54.5,74 L53.5,74 Z M56,72 L57,72 L57,74 L56,74 Z M58.5,72 L59.5,72 L59.5,74 L58.5,74 Z M61,72 L62,72 L62,74 L61,74 Z" />
+
+</vector>

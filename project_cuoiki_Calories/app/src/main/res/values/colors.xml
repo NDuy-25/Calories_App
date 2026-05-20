@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Definitive Tech Dark Palette (Matches Login) -->
+    <color name="primary">#00F0FF</color> <!-- Neon Cyan -->
+    <color name="background_dark">#050505</color> <!-- Pure Black -->
+    <color name="surface_dark">#151A2E</color> <!-- Navy Blue Card -->
+    <color name="surface_variant">#1A1F3C</color> <!-- Highlight -->
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#808080</color>
+
+    <color name="divider">#1A1F3C</color>
+    <color name="error">#FF5252</color>
+</resources>
