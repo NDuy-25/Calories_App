@@ -116,26 +116,15 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ AI Chat thông minh
 
 ---
 
-# 🚀 Cách chạy project
-
-```bash
-git clone <your-repository-link>
-```
-
-- Mở project bằng Android Studio
-- Sync Gradle
-- Chạy ứng dụng trên Emulator hoặc thiết bị Android
-
----
 
 # 👨‍💻 Thành viên thực hiện
 
-- Duy Nguyen
+- Nguyễn Đức Duy
 
 ---
 
 <div align="center">
 
-### ⭐ Nếu thấy project hữu ích hãy cho 1 star nhé ⭐
+### ⭐ Cảm ơn thầy và các bạn đã ghé xem project của em ⭐
 
 </div>
