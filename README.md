@@ -1,17 +1,18 @@
 <div align="center">
 
 # 🔥 Calories App
-### Ứng dụng hỗ trợ theo dõi Calories & luyện tập thông minh
+### Ứng dụng hỗ trợ theo dõi Calories & luyện tập thông minh tích hợp AI
 
 <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Database-Firebase-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Database-Firestore-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI-Gemini-blue?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge"/>
 
 ---
 
 ✨ Ứng dụng giúp người dùng theo dõi lượng calories hằng ngày,  
-quản lý chế độ ăn uống, bài tập và hỗ trợ AI Chat thông minh.
+quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức khỏe bởi AI Chat thông minh.
 
 </div>
 
@@ -19,86 +20,46 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ AI Chat thông minh
 
 # 📱 Các chức năng chính
 
-- 🔐 Đăng nhập / Đăng ký tài khoản
-- 🔑 Quên mật khẩu
-- 🥗 Quản lý món ăn & calories
-- 💪 Theo dõi bài tập
-- 🤖 AI Chat hỗ trợ người dùng
-- 👤 Quản lý thông tin cá nhân
+- 🔐 **Hệ thống tài khoản**: Đăng ký, Đăng nhập (Yêu cầu xác thực Email qua Gmail để bảo mật).
+- 🔑 **Quản lý mật khẩu**: Chức năng Quên mật khẩu & Đổi mật khẩu tiện lợi.
+- 🥗 **Theo dõi dinh dưỡng**: Quản lý danh sách món ăn & tính toán lượng calories nạp vào.
+- 💪 **Quản lý luyện tập**: Theo dõi các bài tập hằng ngày và calories tiêu thụ.
+- 📈 **Biểu đồ thống kê**: Trực quan hóa dữ liệu calories nạp/thải qua các biểu đồ chuyên nghiệp.
+- 🤖 **AI Health Assistant**: Chat bot thông minh sử dụng Gemini AI để tư vấn chế độ ăn uống và tập luyện.
+- 👤 **Hồ sơ cá nhân**: Quản lý thông tin chỉ số cơ thể (BMI, cân nặng, chiều cao).
 
 ---
 
 # 🖼️ Giao diện ứng dụng
 
-## 🔐 Giao diện đăng nhập
-
+## 🔐 Hệ thống xác thực
 <p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/afb48ad7-1e5e-423d-bb88-ae8f353d99f2"/>
+  <img width="280" src="https://github.com/user-attachments/assets/afb48ad7-1e5e-423d-bb88-ae8f353d99f2"/>
+  <img width="280" src="https://github.com/user-attachments/assets/801b6129-f634-46fe-8306-50ed35c14d4b"/>
+  <img width="280" src="https://github.com/user-attachments/assets/caa01848-25b8-44cf-8095-186b3b81b6e8"/>
 </p>
 
 ---
 
-## 📝 Giao diện đăng ký tài khoản
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/801b6129-f634-46fe-8306-50ed35c14d4b"/>
-</p>
-
----
-
-## 🔑 Giao diện quên mật khẩu
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/caa01848-25b8-44cf-8095-186b3b81b6e8"/>
-</p>
-
----
-
-## 🎉 Giao diện dành cho người dùng mới
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/93855b27-2a83-4a4b-9a7d-b5fa4b898f47"/>
-</p>
-
----
-
-## 🏠 Giao diện trang chủ
-
+## 🏠 Trang chủ & Thống kê
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/e6a0bca3-8860-4eee-8a42-5acfe0c828e1"/>
-
   <img width="300" src="https://github.com/user-attachments/assets/16180790-ddeb-4aad-bef5-cf23b9edbb44"/>
 </p>
 
 ---
 
-## 🍱 Giao diện thêm món ăn
-
+## 🥗 Quản lý Dinh dưỡng & Tập luyện
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/84ea9459-76ab-40ee-834c-fc62a356287a"/>
-</p>
-
----
-
-## 🏋️ Giao diện thêm bài tập
-
-<p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/a665d0b3-6d01-4283-a47f-be61e5ffe4df"/>
 </p>
 
 ---
 
-## 🤖 Giao diện AI Chat Box
-
+## 🤖 Trợ lý ảo AI & Cá nhân
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/19ac0a70-8412-43ed-9e3c-384a620292d5"/>
-</p>
-
----
-
-## 👤 Giao diện cá nhân
-
-<p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/80e97e0e-2ac8-450a-aa81-3a87384652ab"/>
 </p>
 
@@ -108,23 +69,19 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ AI Chat thông minh
 
 | Công nghệ | Mô tả |
 |---|---|
-| Java | Ngôn ngữ lập trình chính |
-| Android Studio | IDE phát triển ứng dụng |
-| Firebase Authentication | Xác thực người dùng |
-| Firebase Realtime Database | Lưu trữ dữ liệu |
-| Gemini API / AI | Hỗ trợ AI Chat |
+| **Java** | Ngôn ngữ lập trình chính cho Android. |
+| **Android SDK** | Nền tảng phát triển ứng dụng di động. |
+| **Firebase Auth** | Hệ thống xác thực người dùng bảo mật qua Email. |
+| **Cloud Firestore** | Cơ sở dữ liệu NoSQL lưu trữ dữ liệu người dùng thời gian thực. |
+| **Firebase Storage** | Lưu trữ hình ảnh đại diện người dùng. |
+| **Gemini AI API** | Tích hợp trí tuệ nhân tạo tư vấn sức khỏe thông minh. |
+| **MPAndroidChart** | Hiển thị biểu đồ thống kê calories trực quan. |
+| **Glide** | Thư viện xử lý và tối ưu hóa hiển thị hình ảnh. |
+| **View Binding** | Tối ưu hóa việc tương tác với giao diện XML. |
 
 ---
 
+# 🛠️ Cài đặt để chạy project
 
-# 👨‍💻 Thành viên thực hiện
-
-- Nguyễn Đức Duy
-
----
-
-<div align="center">
-
-### ⭐ Cảm ơn thầy và các bạn đã ghé xem project của em ⭐
-
-</div>
+1. **Clone project:**
+   
