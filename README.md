@@ -14,6 +14,7 @@
 ✨ Ứng dụng giúp người dùng theo dõi lượng calories hằng ngày,  
 quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức khỏe bởi AI Chat thông minh.
 
+
 </div>
 
 ---
@@ -32,34 +33,75 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức kh�
 
 # 🖼️ Giao diện ứng dụng
 
-## 🔐 Hệ thống xác thực
+## 🔐 Giao diện đăng nhập
+
 <p align="center">
-  <img width="280" src="https://github.com/user-attachments/assets/afb48ad7-1e5e-423d-bb88-ae8f353d99f2"/>
-  <img width="280" src="https://github.com/user-attachments/assets/801b6129-f634-46fe-8306-50ed35c14d4b"/>
-  <img width="280" src="https://github.com/user-attachments/assets/caa01848-25b8-44cf-8095-186b3b81b6e8"/>
+  <img width="300" src="https://github.com/user-attachments/assets/afb48ad7-1e5e-423d-bb88-ae8f353d99f2"/>
 </p>
 
 ---
 
-## 🏠 Trang chủ & Thống kê
+## 📝 Giao diện đăng ký tài khoản
+
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/801b6129-f634-46fe-8306-50ed35c14d4b"/>
+</p>
+
+---
+
+## 🔑 Giao diện quên mật khẩu
+
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/caa01848-25b8-44cf-8095-186b3b81b6e8"/>
+</p>
+
+---
+
+## 🎉 Giao diện dành cho người dùng mới
+
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/93855b27-2a83-4a4b-9a7d-b5fa4b898f47"/>
+</p>
+
+---
+
+## 🏠 Giao diện trang chủ
+
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/e6a0bca3-8860-4eee-8a42-5acfe0c828e1"/>
+
   <img width="300" src="https://github.com/user-attachments/assets/16180790-ddeb-4aad-bef5-cf23b9edbb44"/>
 </p>
 
 ---
 
-## 🥗 Quản lý Dinh dưỡng & Tập luyện
+## 🍱 Giao diện thêm món ăn
+
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/84ea9459-76ab-40ee-834c-fc62a356287a"/>
+</p>
+
+---
+
+## 🏋️ Giao diện thêm bài tập
+
+<p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/a665d0b3-6d01-4283-a47f-be61e5ffe4df"/>
 </p>
 
 ---
 
-## 🤖 Trợ lý ảo AI & Cá nhân
+## 🤖 Giao diện AI Chat Box
+
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/19ac0a70-8412-43ed-9e3c-384a620292d5"/>
+</p>
+
+---
+
+## 👤 Giao diện cá nhân
+
+<p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/80e97e0e-2ac8-450a-aa81-3a87384652ab"/>
 </p>
 
@@ -81,7 +123,14 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức kh�
 
 ---
 
-# 🛠️ Cài đặt để chạy project
+# 👨‍💻 Thành viên thực hiện
 
-1. **Clone project:**
-   
+- **Nguyễn Đức Duy** - *Chịu trách nhiệm toàn bộ project*
+
+---
+
+<div align="center">
+
+### ⭐ Cảm ơn thầy và các bạn đã xem project của em ⭐
+
+</div>
