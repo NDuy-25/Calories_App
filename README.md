@@ -109,17 +109,15 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức kh�
 
 # ⚙️ Công nghệ sử dụng
 
-| Công nghệ | Mô tả |
-|---|---|
-| **Java** | Ngôn ngữ lập trình chính cho Android. |
-| **Android SDK** | Nền tảng phát triển ứng dụng di động. |
-| **Firebase Auth** | Hệ thống xác thực người dùng bảo mật qua Email. |
-| **Cloud Firestore** | Cơ sở dữ liệu NoSQL lưu trữ dữ liệu người dùng thời gian thực. |
-| **Firebase Storage** | Lưu trữ hình ảnh đại diện người dùng. |
-| **Gemini AI API** | Tích hợp trí tuệ nhân tạo tư vấn sức khỏe thông minh. |
-| **MPAndroidChart** | Hiển thị biểu đồ thống kê calories trực quan. |
-| **Glide** | Thư viện xử lý và tối ưu hóa hiển thị hình ảnh. |
-| **View Binding** | Tối ưu hóa việc tương tác với giao diện XML. |
+| Nhóm công nghệ | Công nghệ / Thư viện | Mô tả |
+|---|---|---|
+| **Dữ liệu món ăn** | **Food & Exercise API** | Hệ thống cung cấp thông tin dinh dưỡng và cường độ bài tập. |
+| **Database** | Firebase Firestore | Lưu trữ nhật ký người dùng, thông tin cá nhân và dữ liệu bài tập. |
+| **AI** | Google Gemini AI | Trí tuệ nhân tạo hỗ trợ giải đáp thắc mắc sức khỏe 24/7. |
+| **Authentication** | Firebase Auth | Quản lý người dùng và xác thực qua Gmail. |
+| **Visualization** | MPAndroidChart | Hiển thị biểu đồ thống kê calories chuyên nghiệp. |
+| **Image Loading** | Glide | Tải và xử lý hình ảnh món ăn, avatar mượt mà. |
+| **UI/UX** | Material Design 3 | Giao diện hiện đại, hỗ trợ Dark Mode và bo góc mượt mà. |
 
 ---
 
