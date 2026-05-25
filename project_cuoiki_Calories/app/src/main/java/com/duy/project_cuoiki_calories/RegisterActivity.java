@@ -2,11 +2,13 @@ package com.duy.project_cuoiki_calories;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.duy.project_cuoiki_calories.databinding.ActivityRegisterBinding;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -28,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
             String pass = binding.etPassword.getText().toString().trim();
             String confirmPass = binding.etConfirmPassword.getText().toString().trim();
 
-            if (email.isEmpty() || pass.isEmpty()) {
+            if (email.isEmpty() || pass.isEmpty() || confirmPass.isEmpty()) {
                 Toast.makeText(this, "Vui lòng nhập đủ thông tin", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -39,21 +41,40 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
             binding.btnRegister.setEnabled(false);
-            binding.btnRegister.setText("ĐANG TẠO TÀI KHOẢN...");
+            binding.btnRegister.setText("ĐANG XỬ LÝ...");
 
             mAuth.createUserWithEmailAndPassword(email, pass)
                     .addOnCompleteListener(task -> {
-                        binding.btnRegister.setEnabled(true);
-                        binding.btnRegister.setText("ĐĂNG KÝ");
-                        
                         if (task.isSuccessful()) {
-                            Toast.makeText(RegisterActivity.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
-                            // Vào thẳng màn hình chính
-                            startActivity(new Intent(RegisterActivity.this, UserInfoActivity.class));
-                            finish();
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            if (user != null) {
+                                // Gửi email xác thực
+                                user.sendEmailVerification()
+                                        .addOnCompleteListener(verifyTask -> {
+                                            binding.btnRegister.setEnabled(true);
+                                            binding.btnRegister.setText("ĐĂNG KÝ");
+
+                                            if (verifyTask.isSuccessful()) {
+                                                // Hiện thông báo thành công và yêu cầu xác thực
+                                                new MaterialAlertDialogBuilder(RegisterActivity.this)
+                                                        .setTitle("Đăng ký thành công")
+                                                        .setMessage("Link xác nhận đã được gửi vào Gmail: " + email + "\n\nVui lòng kiểm tra hộp thư (bao gồm cả thư rác/spam) và nhấn vào link để kích hoạt tài khoản.")
+                                                        .setCancelable(false)
+                                                        .setPositiveButton("OK, ĐÃ HIỂU", (dialog, which) -> {
+                                                            mAuth.signOut(); // Đăng xuất để yêu cầu xác thực ở màn hình Login
+                                                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                                                            finish();
+                                                        })
+                                                        .show();
+                                            } else {
+                                                Toast.makeText(RegisterActivity.this, "Lỗi gửi mail: " + verifyTask.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                            }
+                                        });
+                            }
                         } else {
-                            String error = task.getException() != null ? task.getException().getMessage() : "Lỗi đăng ký";
-                            Toast.makeText(RegisterActivity.this, "Lỗi: " + error, Toast.LENGTH_LONG).show();
+                            binding.btnRegister.setEnabled(true);
+                            binding.btnRegister.setText("ĐĂNG KÝ");
+                            Toast.makeText(RegisterActivity.this, "Lỗi: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
                     });
         });

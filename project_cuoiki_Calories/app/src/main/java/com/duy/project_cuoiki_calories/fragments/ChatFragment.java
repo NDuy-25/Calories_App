@@ -39,7 +39,7 @@ public class ChatFragment extends Fragment {
     private final Executor executor = Executors.newSingleThreadExecutor();
 
     // API KEY
-    private final String API_KEY = "em xin ẩn mã API để ko bị lỗi";
+    private final String API_KEY = "API_KEY";
 
     @Nullable
     @Override
