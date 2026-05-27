@@ -197,8 +197,6 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 
 <div align="center">
 
-# ⭐ Cảm ơn bạn đã ghé thăm project ⭐
-
-Nếu thấy project hữu ích hãy cho mình một ⭐ trên GitHub nhé ❤️
+# ⭐ Cảm ơn các bạn và thầy cô đã ghé thăm project ⭐
 
 </div>
