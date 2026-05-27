@@ -44,7 +44,7 @@ public class ChatFragment extends Fragment {
     private final Executor executor = Executors.newSingleThreadExecutor();
 
     // API KEY
-    private final String API_KEY = "";
+    private final String API_KEY = "API Key for you";
 
     @Nullable
     @Override
