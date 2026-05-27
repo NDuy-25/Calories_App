@@ -132,7 +132,8 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 
 <div align="center">
 
-<img width="280" src="https://github.com/user-attachments/assets/19ac0a70-8412-43ed-9e3c-384a620292d5"/>
+<img width="280" src="https://github.com/user-attachments/assets/eaaa6a4f-3a10-4fd8-92a7-30250b9c0a0e"/>
+
 
 </div>
 
@@ -142,12 +143,15 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 
 <div align="center">
 
-<img width="280" src="https://github.com/user-attachments/assets/80e97e0e-2ac8-450a-aa81-3a87384652ab"/>
+<img width="280" src="https://github.com/user-attachments/assets/543fd72f-75ba-4e81-a7ca-f181b96d8e06"/>
 
 </div>
 
 ---
 
+# Video chạy project
+https://drive.google.com/drive/u/0/folders/1aOIl7-iFmwZLWe3uZiKnPSskkXhRVKMo
+---
 # 🛠️ Công nghệ sử dụng
 
 <div align="center">
