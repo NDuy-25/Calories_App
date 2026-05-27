@@ -94,7 +94,7 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức kh�
 ## 🤖 Giao diện AI Chat Box
 
 <p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/19ac0a70-8412-43ed-9e3c-384a620292d5"/>
+  <img width="300" src="https://github.com/user-attachments/assets/d0f96109-10ef-4154-a257-2be5a94293b9"/>
 </p>
 
 ---
@@ -102,11 +102,21 @@ quản lý chế độ ăn uống, bài tập và hỗ trợ tư vấn sức kh�
 ## 👤 Giao diện cá nhân
 
 <p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/80e97e0e-2ac8-450a-aa81-3a87384652ab"/>
+  <img width="300" src="https://github.com/user-attachments/assets/8c5667c0-af21-4e30-97e6-5c389d60b460"/>
 </p>
 
 ---
+## Giao diện thực đơn yêu thích
 
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/661d5987-464a-4840-96bd-b9394437b6c5"/>
+</p>
+
+## Video chạy dự án
+
+<p align="center">
+https://drive.google.com/file/d/1R8j98Br4PUWNDa96w8L9Wa2e5H9m_wb1/view?usp=sharing
+</p>
 # ⚙️ Công nghệ sử dụng
 
 | Nhóm công nghệ | Công nghệ / Thư viện | Mô tả |
