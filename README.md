@@ -169,7 +169,7 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 
 <div align="center">
 
-### 🧑‍💻 Nguyễn Đức Duy
+### 🧑‍💻 Duy Nguyen
 
 </div>
 
@@ -180,100 +180,5 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 # ⭐ Cảm ơn bạn đã ghé thăm project ⭐
 
 Nếu thấy project hữu ích hãy cho mình một ⭐ trên GitHub nhé ❤️
-
-</div>
----
-
-## 🔑 Giao diện quên mật khẩu
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/caa01848-25b8-44cf-8095-186b3b81b6e8"/>
-</p>
-
----
-
-## 🎉 Giao diện dành cho người dùng mới
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/93855b27-2a83-4a4b-9a7d-b5fa4b898f47"/>
-</p>
-
----
-
-## 🏠 Giao diện trang chủ
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/e6a0bca3-8860-4eee-8a42-5acfe0c828e1"/>
-
-  <img width="300" src="https://github.com/user-attachments/assets/16180790-ddeb-4aad-bef5-cf23b9edbb44"/>
-</p>
-
----
-
-## 🍱 Giao diện thêm món ăn
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/84ea9459-76ab-40ee-834c-fc62a356287a"/>
-</p>
-
----
-
-## 🏋️ Giao diện thêm bài tập
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/a665d0b3-6d01-4283-a47f-be61e5ffe4df"/>
-</p>
-
----
-
-## 🤖 Giao diện AI Chat Box
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/d0f96109-10ef-4154-a257-2be5a94293b9"/>
-</p>
-
----
-
-## 👤 Giao diện cá nhân
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/8c5667c0-af21-4e30-97e6-5c389d60b460"/>
-</p>
-
----
-## Giao diện thực đơn yêu thích
-
-<p align="center">
-  <img width="300" src="https://github.com/user-attachments/assets/661d5987-464a-4840-96bd-b9394437b6c5"/>
-</p>
-
-## Video chạy dự án
-
-<p align="center">
-https://drive.google.com/file/d/1R8j98Br4PUWNDa96w8L9Wa2e5H9m_wb1/view?usp=sharing
-</p>
-# ⚙️ Công nghệ sử dụng
-
-| Nhóm công nghệ | Công nghệ / Thư viện | Mô tả |
-|---|---|---|
-| **Dữ liệu món ăn** | **Food & Exercise API** | Hệ thống cung cấp thông tin dinh dưỡng và cường độ bài tập. |
-| **Database** | Firebase Firestore | Lưu trữ nhật ký người dùng, thông tin cá nhân và dữ liệu bài tập. |
-| **AI** | Google Gemini AI | Trí tuệ nhân tạo hỗ trợ giải đáp thắc mắc sức khỏe 24/7. |
-| **Authentication** | Firebase Auth | Quản lý người dùng và xác thực qua Gmail. |
-| **Visualization** | MPAndroidChart | Hiển thị biểu đồ thống kê calories chuyên nghiệp. |
-| **Image Loading** | Glide | Tải và xử lý hình ảnh món ăn, avatar mượt mà. |
-| **UI/UX** | Material Design 3 | Giao diện hiện đại, hỗ trợ Dark Mode và bo góc mượt mà. |
-
----
-
-# 👨‍💻 Thành viên thực hiện
-
-- **Nguyễn Đức Duy** - *Chịu trách nhiệm toàn bộ project*
-
----
-
-<div align="center">
-
-### ⭐ Cảm ơn thầy và các bạn đã xem project của em ⭐
 
 </div>
