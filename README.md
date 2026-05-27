@@ -149,8 +149,24 @@ giúp tư vấn ăn uống, luyện tập và chăm sóc sức khỏe thông min
 
 ---
 
-# Video chạy project
-https://drive.google.com/drive/u/0/folders/1aOIl7-iFmwZLWe3uZiKnPSskkXhRVKMo
+# 📚 Thực đơn đã lưu
+
+<div align="center">
+
+<img width="260" src="https://github.com/user-attachments/assets/d97c6c88-79cf-49bb-9ee3-7796c419c32c"/>
+
+</div>
+
+---
+
+# 🎥 Video Demo Project
+
+<div align="center">
+
+[![Watch Demo](https://img.shields.io/badge/▶️-Watch%20Demo-success?style=for-the-badge)](https://drive.google.com/drive/u/0/folders/1aOIl7-iFmwZLWe3uZiKnPSskkXhRVKMo)
+
+</div>
+
 ---
 # 🛠️ Công nghệ sử dụng
 
@@ -173,7 +189,7 @@ https://drive.google.com/drive/u/0/folders/1aOIl7-iFmwZLWe3uZiKnPSskkXhRVKMo
 
 <div align="center">
 
-### 🧑‍💻 Duy Nguyen
+### 🧑‍💻 Nguyễn Đức Duy
 
 </div>
 
