@@ -3,6 +3,7 @@ package com.duy.project_cuoiki_calories.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,9 +14,18 @@ import java.util.List;
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<ChatMessage> chatMessages;
+    private OnSaveClickListener saveClickListener;
+
+    public interface OnSaveClickListener {
+        void onSaveClick(ChatMessage message, int position);
+    }
 
     public ChatAdapter(List<ChatMessage> chatMessages) {
         this.chatMessages = chatMessages;
+    }
+
+    public void setOnSaveClickListener(OnSaveClickListener listener) {
+        this.saveClickListener = listener;
     }
 
     @Override
@@ -37,11 +47,26 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        String message = chatMessages.get(position).getMessage();
+        ChatMessage chatMessage = chatMessages.get(position);
+        String message = chatMessage.getMessage();
         if (holder instanceof UserViewHolder) {
             ((UserViewHolder) holder).tvMessage.setText(message);
         } else {
-            ((BotViewHolder) holder).tvMessage.setText(message);
+            BotViewHolder botHolder = (BotViewHolder) holder;
+            botHolder.tvMessage.setText(message);
+            
+            // Cập nhật icon dựa trên trạng thái đã lưu
+            if (chatMessage.isSaved()) {
+                botHolder.btnSave.setImageResource(android.R.drawable.btn_star_big_on);
+            } else {
+                botHolder.btnSave.setImageResource(android.R.drawable.btn_star_big_off);
+            }
+
+            botHolder.btnSave.setOnClickListener(v -> {
+                if (saveClickListener != null) {
+                    saveClickListener.onSaveClick(chatMessage, position);
+                }
+            });
         }
     }
 
@@ -60,9 +85,11 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     static class BotViewHolder extends RecyclerView.ViewHolder {
         TextView tvMessage;
+        ImageButton btnSave;
         BotViewHolder(@NonNull View itemView) {
             super(itemView);
             tvMessage = itemView.findViewById(R.id.tvMessage);
+            btnSave = itemView.findViewById(R.id.btnSave);
         }
     }
 }

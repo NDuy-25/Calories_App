@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,9 +24,13 @@ import com.google.ai.client.generativeai.type.RequestOptions;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -39,7 +44,7 @@ public class ChatFragment extends Fragment {
     private final Executor executor = Executors.newSingleThreadExecutor();
 
     // API KEY
-    private final String API_KEY = "API_KEY";
+    private final String API_KEY = "";
 
     @Nullable
     @Override
@@ -64,6 +69,11 @@ public class ChatFragment extends Fragment {
         messageList = new ArrayList<>();
 
         adapter = new ChatAdapter(messageList);
+        
+        // Cài đặt sự kiện Lưu (Like) thực đơn
+        adapter.setOnSaveClickListener((message, position) -> {
+            saveRecipeToFirestore(message, position);
+        });
 
         binding.rvChat.setLayoutManager(
                 new LinearLayoutManager(getContext())
@@ -94,6 +104,35 @@ public class ChatFragment extends Fragment {
                 askGeminiAI(message);
             }
         });
+    }
+
+    private void saveRecipeToFirestore(ChatMessage message, int position) {
+        String userId = FirebaseAuth.getInstance().getUid();
+        if (userId == null) {
+            Toast.makeText(getContext(), "Vui lòng đăng nhập để lưu", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (message.isSaved()) {
+            Toast.makeText(getContext(), "Thực đơn này đã được lưu rồi", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        Map<String, Object> recipe = new HashMap<>();
+        recipe.put("content", message.getMessage());
+        recipe.put("timestamp", System.currentTimeMillis());
+
+        db.collection("users").document(userId).collection("saved_recipes")
+                .add(recipe)
+                .addOnSuccessListener(documentReference -> {
+                    message.setSaved(true);
+                    adapter.notifyItemChanged(position);
+                    Toast.makeText(getContext(), "Đã lưu thực đơn vào danh sách yêu thích ❤️", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(getContext(), "Lỗi khi lưu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
     }
 
     private void initGemini() {

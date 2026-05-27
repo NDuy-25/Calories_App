@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.duy.project_cuoiki_calories.LoginActivity;
+import com.duy.project_cuoiki_calories.SavedRecipesActivity;
 import com.duy.project_cuoiki_calories.databinding.FragmentProfileBinding;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
@@ -54,6 +55,10 @@ public class ProfileFragment extends Fragment {
             loadProfile();
             loadChartData();
         }
+
+        binding.btnSavedRecipes.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), SavedRecipesActivity.class));
+        });
 
         binding.btnLogout.setOnClickListener(v -> {
             mAuth.signOut();
